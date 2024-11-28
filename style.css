@@ -1,0 +1,65 @@
+:root{
+    --fonte-principal: "Source Code Pro";
+}
+
+.cabecalho{
+    display: flex;
+    background-color: #72785d;
+    justify-content: space-between;
+    padding: 1% 20% 1% 20%;
+    align-items: center;
+
+    /*configurações de fonte*/
+    font-family: var(--fonte-principal);
+    font-style: normal;  
+    font-weight: 450;
+}
+
+.cabecalho__itens{
+    width: 100%;
+    display: flex;
+    gap: 10%;
+}
+.cabecalho__item{
+    text-decoration: none;
+    color: white;
+}
+
+.cabecalho__insta{
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.cabecalho__insta__logo{
+    width: 8%;
+}
+
+.cabecalho__insta__logo__link{
+    display: flex;
+    flex-direction: row-reverse;
+
+}
+
+.rodape{
+    background-color: #859678;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 3%;
+    position: absolute;
+    bottom:0%;
+    width: 100%;
+
+    /*configurações de texto*/
+    font-family: var(--fonte-principal);
+    font-style: normal;  
+    font-weight: 450;
+    color: white;
+}
+
+.rodape__texto__link{
+    text-decoration: none;
+    color: white;
+}
