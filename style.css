@@ -2,27 +2,71 @@
     --fonte-principal: "Source Code Pro";
 }
 
-.cabecalho{
+/* Configurações do cabeçalho */
+.cabecalho {
     display: flex;
     background-color: #72785d;
     justify-content: space-between;
     padding: 1% 20% 1% 20%;
     align-items: center;
 
-    /*configurações de fonte*/
+    /* Configurações de fonte */
     font-family: var(--fonte-principal);
     font-style: normal;  
     font-weight: 450;
 }
 
-.cabecalho__itens{
+.cabecalho__itens {
     width: 100%;
     display: flex;
     gap: 10%;
+    list-style: none; /* Remove bullets das listas */
+    margin: 0;
+    padding: 0;
 }
-.cabecalho__item{
+
+.cabecalho__item {
     text-decoration: none;
     color: white;
+    position: relative; /* Importante para posicionar dropdowns */
+}
+
+/* Configuração do dropdown */
+.cabecalho__dropdown {
+    position: relative;
+}
+
+.dropdown__menu {
+    display: none; /* Esconde o dropdown inicialmente */
+    position: absolute;
+    top: 100%; /* Alinha o menu abaixo do item */
+    left: 0;
+    background-color: #72785d;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    z-index: 1000;
+
+}
+
+.dropdown__menu li {
+    padding: 15px 20px;
+}
+
+.dropdown__menu li a {
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+
+/* Aparecer o menu ao passar o mouse */
+.cabecalho__dropdown:hover .dropdown__menu {
+    display: block;
+}
+
+/* Estilo adicional para hover no dropdown */
+.dropdown__menu li a:hover {
+    background-color: #859678;
 }
 
 .cabecalho__insta{
